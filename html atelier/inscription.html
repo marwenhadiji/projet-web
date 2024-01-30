@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Accueil</title>
+    </head>
+    <body>
+        <header>
+            <nav> 
+                <a href="acceuil.html">Home</a>
+                <a href="Projet_taches.html">Projet & Taches</a>
+                <a href="liste_emp.html">Liste employee</a>
+                <a href="inscription.html">Inscription</a>
+            </nav>
+            <img src="images\img1.jpg" height="100%" width="50%" alt="banner">
+            <hr/>
+        </header>
+        <section >
+            <h1>Inscription au Site</h1>  
+            <form>
+                <table>
+                    <tr>
+                        <td><label>Nom :</label></td>
+                        <td><input type="text" name="Nom" pattern="[A-Za-z]{2,}" 
+                            title="Veuillez entrer un nom valide (lettres uniquement, au moins 2 caractères)" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Prenom :</label></td>
+                        <td><input type="text" name="prenom" pattern="[A-Za-z]{2,}" 
+                        title="Veuillez entrer un prenom valide (lettres uniquement, au moins 2 caractères)" required> </td>
+                    </tr>
+                    <tr>
+                        <td><label>Email:</label></td>
+                        <td><input type="email" placeholder="contact@exemple.com" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Telephone :</label></td>
+                        <td><input type="text" name="telephone" pattern="[0-9]{8}" 
+                            title="Veuillez entrer un numéro de téléphone valide (8 chiffres)" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date de naissance :</label></td>
+                        <td><input type="date" name="date" required> </td>
+                    </tr>
+                    <tr>
+                        <td><label>Mot de passe :</label></td>
+                        <td><input type="text" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Le mot de passe doit contenir au moins 8 caractères, incluant au moins un chiffre,
+                         une lettre minuscule et une lettre majuscule" required></td>
+                        <td><input type="submit" value="s'inscrire"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <footer>
+            <p>vous pouvez nous contacter <a href="mailto:contact@gmail.com">contact@gmail.com</a></p>
+            <p>Adresse : Ghazela , Tunis</p>
+        </footer>
+    </body>
+
+
+</html>
